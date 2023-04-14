@@ -1,0 +1,128 @@
+@import 'font';
+
+
+
+
+
+// ****************** ШРИФТ ****************************
+
+// &display=swap&subset=cyrillic-ext
+// @import url();
+
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap");
+
+$fontFamily: 'Work Sans';
+
+// ****************** ШРИФТ ****************************
+
+
+
+// ****************** ЗМІННІ ****************************
+
+$maxWidthContainer: 1320px;
+
+$md1: $maxWidthContainer+12;
+$md2: 991.98px;
+$md3: 767.98px;
+$md5: 500px;
+
+$texColor: #1e1e1e;
+
+$light-green: #70a46b;
+
+$backgroundColor: #fff;
+
+$fontSize: 18px;
+
+// ****************** ЗМІННІ ****************************
+
+
+//  *******************************************
+@import '_reset';
+@import 'ui';
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: $fontSize;
+    background-color: $backgroundColor;
+    color: $texColor;
+    font-family: $fontFamily;
+    font-weight: 400;
+
+    &._lock {
+        overflow: hidden;
+    }
+}
+
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.page {
+    flex: 1 1 auto;
+    padding-top: 90px;
+    @media (max-width: $md3) {
+        padding-top: 70px;
+    
+    }
+}
+
+.__container {
+    padding: 0 10px;
+    max-width: $maxWidthContainer + 10px;
+    margin: 0 auto;
+
+    // @media (max-width: $md1) {
+    //     max-width: 970px;
+    // }
+
+    @media (max-width: $md2) {
+        max-width: 750px;
+    }
+
+    @media (max-width: $md3) {
+        max-width: none;
+    }
+}
+
+
+// ****************** HEADER ****************************
+
+@import 'header';
+
+// ****************** HEADER ****************************
+
+
+@import 'garantia';
+@import 'contacto';
+@import 'producto-categories';
+@import 'producto-listado';
+@import 'producto-info';
+
+
+
+
+
+
+// ****************** FOOTER ****************************
+
+@import 'home';
+
+// ****************** FOOTER ****************************
+
+
+
+
+
+
+// ****************** FOOTER ****************************
+
+@import 'footer';
+
+// ****************** FOOTER ****************************

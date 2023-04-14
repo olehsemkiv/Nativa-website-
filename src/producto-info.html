@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+@@include('html/head.html', {
+"title": "producto-listado"
+})
+
+<body>
+
+    <div class="wrapper">
+
+        @@include('html/header.html', {
+        "link":"1"
+        })
+
+        <main class="page">
+
+            <section class="producto-info-front">
+                <div class="producto-info-front__container _ibg">
+                    <div class="__container">
+                        <ul class="producto-info-front__menu mini-menu">
+                            <li class="mini-menu__item">
+                                <a href="index.html" class="mini-menu__link">Home</a>
+                            </li>
+                            <li class="mini-menu__item">
+                                <a href="producto.html" class="mini-menu__link"> / Productos</a>
+                            </li>
+                            <li class="mini-menu__item">
+                                <a href="producto.html" class="mini-menu__link"> / visco</a>
+                            </li>
+                            <li class="mini-menu__item">
+                                <a href="producto.html" class="mini-menu__link"> / Touch Cloud</a>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                    <img src="@img/product/banner-visco.jpg" alt="">
+                </div>
+            </section>
+            <section class="product-info-content">
+                <div class="product-info-content__container __container">
+                    <h1 class="product-info-content__title">Touch Cloud</h1>
+                    <h2 class="product-info-content__sub-title">Molido visco, espuma visco.</h2>
+                    <p class="product-info-content__text">Un producto con un equilibrio perfecto entre confort y soporte
+                        con
+                        un interior compuesto por viscochips de espuma viscoelástica y una exclusiva funda de interlock
+                        de
+                        gran suavidad.
+                    </p>
+                    <p class="product-info-content__text">La espuma viscoelástica brinda el apoyo justo.
+                    </p>
+                    <div class="product-info-content__image _ibg">
+                        <img src="@img/product-info/01.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="product-info-description">
+                <div class="product-info-description__container __container">
+                    <div class="product-info-description__medidas">
+                        <h3 class="product-info-description__heading">
+                            Medidas:
+                        </h3>
+                        <p class="product-info-description__size">70x40x13</p>
+                    </div>
+                    <div class="product-info-description__diferenciales">
+                        <h3 class="product-info-description__heading">
+                            Diferenciales:
+                        </h3>
+                        <ul class="product-info-description__list">
+                            <li class="product-info-description__item">
+                                <div class="product-info-description__item-img">
+                                    <img src="@img/product-info/nativa_D-espuma-viscoelastica.svg" alt="">
+                                </div>
+                                <div class="product-info-description__item-text">Tejido interlock.</div>
+                            </li>
+                            <li class="product-info-description__item">
+                                <div class="product-info-description__item-img">
+                                    <img src="@img/product-info/nativa_D-tejido-interlock.svg" alt="">
+                                </div>
+                                <div class="product-info-description__item-text">Chips de espuma viscoelástica.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        @@include('html/footer.html', {})
+
+    </div>
+    @@include('html/js.html', {})
+
+
+</body>
+
+</html>

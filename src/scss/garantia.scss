@@ -1,0 +1,194 @@
+.garantia-front {
+
+    // .garantia-front__container
+
+    &__container {
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+        height: 580px;
+        padding: 50px 15px;
+        max-height: 100%;
+
+        @media (max-width: $md3) {
+            height: 350px;
+        }
+    }
+
+    &__menu {}
+}
+
+// ====================================================================================================================================================
+// garantia-info
+// ====================================================================================================================================================
+
+.garantia-info {
+
+    // .garantia-info__container
+
+    &__container {
+
+        padding: 80px 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        @media (max-width: $md3) {
+            padding: 50px 15px;
+        }
+
+        @media (max-width: $md5) {
+            padding: 30px 15px;
+        }
+    }
+
+    // .garantia-info__title
+
+    &__title {
+        color: #70a46b;
+        font-size: 50px;
+        text-align: center;
+        margin: 0px 0px 50px 0px;
+
+        @media (max-width: $md3) {
+            font-size: 30px;
+        }
+
+        @media (max-width: $md5) {
+            margin: 0px 0px 25px 0px;
+            font-size: 25px;
+
+        }
+    }
+
+    // .garantia-info__text
+
+    &__text {
+        font-size: 25px;
+        color: #908e8e;
+        text-align: center;
+        margin: 0px 0px 50px 0px;
+
+
+        @media (max-width: $md5) {
+            margin: 0px 0px 25px 0px;
+            font-size: 18px;
+
+        }
+    }
+
+    // .garantia-info__btn
+
+    &__btn {
+        background-color: $light-green;
+        color: #fff;
+        font-weight: 500;
+        padding: 12px 15px;
+        border-radius: 25px;
+        font-size: 18px;
+        text-align: center;
+        transition: all 0.4s ease 0s;
+
+        @media (min-width: $md2) {
+            &:hover {
+                background-color: #46af3c;
+            }
+        }
+    }
+}
+
+// ====================================================================================================================================================
+// reclamos
+// ====================================================================================================================================================
+
+.garantia-reclamos {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+
+    img {
+        z-index: -1;
+    }
+
+    // .garantia-reclamos__container
+
+    &__container {
+
+        padding: 100px 15px 150px 15px;
+
+        @media (max-width: $md3) {
+            padding: 60px 15px;
+        }
+
+        @media (max-width: $md5) {
+            padding: 30px 15px;
+        }
+
+    }
+
+    // .garantia-reclamos__title
+
+    &__title {
+        font-weight: 300;
+        font-size: 50px;
+        line-height: 120%;
+        color: $light-green;
+        text-align: center;
+        margin: 0px 0px 40px 0px;
+
+        @media (max-width: $md3) {
+            font-size: 30px;
+        }
+
+        @media (max-width: $md5) {
+            margin: 0px 0px 20px 0px;
+
+        }
+    }
+
+    &__sub-title {
+        color: #1e1e1e;
+        font-size: 25px;
+        line-height: 100%;
+        margin: 0px 0px 25px 0px;
+
+
+    }
+
+    // .garantia-reclamos__body
+
+    &__body {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 60px 40px;
+        box-shadow: 2px -1px 6px 1px #eeeeee;
+        background-color: #fff;
+
+        @media (max-width: $md5) {
+            padding: 25px 15px;
+        }
+    }
+
+    // .garantia-reclamos__list
+
+    &__list {}
+
+    // .garantia-reclamos__item
+
+    &__item {
+
+        color: #908e8e;
+        font-size: 20px;
+        line-height: 125%;
+
+        /* 25/20 */
+        span {
+            color: $light-green;
+        }
+
+        &:not(:last-child) {
+            margin: 0px 0px 20px 0px;
+        }
+    }
+}

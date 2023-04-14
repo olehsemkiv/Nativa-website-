@@ -1,0 +1,144 @@
+.footer {
+
+    // .footer__container
+
+    &__container {
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+        background-color: #201e1d;
+        padding: 0 15px;
+    }
+
+    // .footer__top
+
+    &__top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 120px 0;
+
+        border-bottom: 1px solid #978d88;
+
+        @media (max-width: $md3) {
+            padding: 60px 0;
+        }
+
+
+    }
+
+    // .footer__text
+
+    &__text {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 185px;
+
+            @media (max-width: $md3) {
+                margin: 0px 0px 20px 0px;
+            }
+        }
+
+        p {
+            font-size: 35px;
+            color: #908e8e;
+
+            @media (max-width: $md3) {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: $md3) {
+            flex-direction: column;
+        }
+    }
+
+    // .footer__logo
+
+    &__logo {}
+
+    // .footer__bottom
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 60px;
+
+        @media (max-width: $md3) {
+            padding: 20px 15px;
+
+        }
+    }
+
+    // .footer__info
+
+    &__info {
+        font-size: 14px;
+        color: #fff;
+        line-height: 130%;
+
+        @media (max-width: $md3) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    // .footer__scond-logo
+
+    &__scond-logo {
+        img {
+            width: 130px;
+        }
+
+        @media (max-width: $md3) {
+            display: none;
+        }
+    }
+
+    &__scond-logo-top {
+        display: none;
+
+        img {
+            width: 185px;
+        }
+
+        @media (max-width: $md3) {
+            display: block;
+        }
+    }
+
+    &__line {
+        width: 50px;
+        height: 2px;
+        background-color: #343434;
+        // padding: 0 20px;
+        margin: 0 20px;
+
+
+
+        @media (max-width: $md3) {
+            width: 100px;
+            margin: 20px 0px;
+
+            display: none;
+        }
+    }
+
+    &__line-bottom {
+        width: 50px;
+        height: 2px;
+        background-color: #343434;
+        display: none;
+
+        @media (max-width: $md3) {
+            width: 100px;
+            margin: 20px 0px;
+
+            display: block;
+        }
+    }
+}

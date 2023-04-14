@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+@@include('html/head.html', {
+"title": "Home"
+})
+
+<body>
+
+    <div class="wrapper">
+
+        @@include('html/header.html', {
+        "link":"1"
+        })
+
+        <main class="page">
+
+            <section class="page__front front">
+                <div class="front__container">
+                    <div class="front__swiper swiper front__mySwiper mySwiper">
+                        <div class="front__swiper-wrapper swiper-wrapper">
+                            <div class="front__swiper-slide swiper-slide">
+                                <div class="front__slide-box _ibg">
+                                    <h2>La almohada que merecés</h2>
+                                    <img src="@img/front/01.png" alt="">
+                                </div>
+                            </div>
+                            <div class="front__swiper-slide swiper-slide">
+                                <div class="front__slide-box _ibg">
+                                    <h2>La almohada que merecés</h2>
+
+                                    <img src="@img/front/01.png" alt="">
+                                </div>
+                            </div>
+                            <div class="front__swiper-slide swiper-slide">
+                                <div class="front__slide-box _ibg">
+                                    <h2>La almohada que merecés</h2>
+                                    <img src="@img/front/01.png" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="front__swiper-pagination swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__second second">
+                <div class="second__container __container">
+                    <h2 class="second__title">¡La almohada que siempre soñaste!</h2>
+                    <p class="second__text">Simples, prácticas y fácilmente portables. <br> Pensadas para cualquier
+                        posición
+                        de sueño.
+                    </p>
+
+                    <div class="second__swiper swiper mySwiper second__mySwiper">
+                        <div class="swiper-wrapper second__swiper-wrapper">
+                            <div class="swiper-slide second__swiper-slide">
+                                <div class="second__slide-box slide-item">
+                                    <div class="slide-item__img ">
+                                        <img src="@img/second/01.png" alt="">
+                                    </div>
+                                    <h3 class="slide-item__title">fibra</h3>
+                                    <div class="slide-item__text slide-item__text_dark">Máxima adaptabilidad, <br> soporte y confort.</div>
+                                    <a href="#" class="slide-item__btn">Ver linea</a>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide second__swiper-slide">
+                                <div class="second__slide-box slide-item">
+                                    <h3 class="slide-item__title">espuma</h3>
+                                    <div class="slide-item__text">Diversos niveles de confort <br> adaptados a cada estilo de sueño. </div>
+                                    <a href="#" class="slide-item__btn">Ver linea</a>
+                                    <div class="slide-item__img ">
+                                        <img src="@img/second/02.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide second__swiper-slide">
+                                <div class="second__slide-box slide-item">
+                                    <h3 class="slide-item__title">visco</h3>
+                                    <div class="slide-item__text">¡Firmeza, frescura  <br> y confort!</div>
+                                    <a href="#" class="slide-item__btn">Ver linea</a>
+                                    <div class="slide-item__img ">
+                                        <img src="@img/second/03.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-pagination second__swiper-pagination"></div>
+                    </div>
+
+                </div>
+            </section>
+            <div class="protectores page__protectores">
+                <div class="protectores__container __container">
+                    <h2 class="protectores__title">protectores</h2>
+                    <p class="protectores__text">Cuidá tus colchones con protectores <br> suaves y frescos. ¡Protegé tu
+                        inversión!</p>
+                    <a href="#" class="protectores__btn">Ver linea</a>
+                    <div class="protectores__background">
+                        <img src="@img/protectores/protectores.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="page__banner banner">
+                <div class="banner__container">
+                    <h1 class="banner__title">Almohadas adaptadas a tu estilo de sueño.</h1>
+                    <div class="banner__background">
+                        <img src="@img/protectores/bg.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <section class="page__info info">
+                <div class="info__container">
+                    <div class="info__block">
+                        <div class="info__text">
+                            Diseños frescos, materiales suavesy <br> niveles de firmeza adaptados a <br> cada necesidad
+                            y estilos
+                            de sueño.
+                        </div>
+                        <div class="info__img _ibg">
+                            <img src="@img/info/01.png" alt="">
+                        </div>
+                    </div>
+                    <div class="info__block info__block_reverse">
+                        <div class="info__text">
+                            Nuevos y variados formatos <br> que te permiten encontrar <br> esa almohada que tanto
+                            merecés.
+                        </div>
+                        <div class="info__img _ibg">
+                            <img src="@img/info/02.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        @@include('html/footer.html', {})
+
+    </div>
+    @@include('html/js.html', {})
+
+
+</body>
+
+</html>

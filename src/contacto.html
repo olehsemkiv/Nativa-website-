@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+@@include('html/head.html', {
+"title": "Contacto"
+})
+
+<body>
+
+    <div class="wrapper">
+
+        @@include('html/header.html', {
+        "link":"1"
+        })
+
+        <main class="page">
+
+            <section class="contacto-front">
+                <div class="contacto-front__container _ibg">
+                    <div class="__container">
+                        <ul class="contacto-front__menu mini-menu">
+                            <li class="mini-menu__item">
+                                <a href="index.html" class="mini-menu__link">Home</a>
+                            </li>
+                            <li class="mini-menu__item">
+                                <a href="contacto.html" class="mini-menu__link"> / Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <img src="@img/garantia-front/garantia-bg.png" alt="">
+                </div>
+            </section>
+            <section class="contacto-form">
+                <div class="contacto-form__container __container">
+                    <h1 class="contacto-form__title">Contactate con nosotros</h1>
+                    <div class="contacto-form__form form">
+                        <form>
+                            <input type="text" class="form__input" placeholder="Nombre y Apellido:">
+                            <div class="form__input-wrapper">
+                                <input type="text" class="form__input form__input_small" placeholder="Ciudad:">
+                                <input type="text" class="form__input form__input_small" placeholder="Localidad:">
+                                <input type="text" class="form__input form__input_small" placeholder="País:">
+                            </div>
+                            <input type="text" class="form__input" placeholder="Mail:">
+                            <input type="text" class="form__input" placeholder="Número de contacto:">
+                            <textarea class="form__text-area" name="" id="" placeholder="Consulta:"></textarea>
+                            <button class="form__submit" type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        @@include('html/footer.html', {})
+
+    </div>
+    @@include('html/js.html', {})
+
+
+</body>
+
+</html>

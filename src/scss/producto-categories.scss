@@ -1,0 +1,38 @@
+.categories {
+
+    // .categories__container
+
+    &__container {
+        padding: 80px 15px 30px;
+
+        @media (max-width: $md3) {
+            padding: 50px 15px;
+        }
+    }
+
+    // .categories__title
+
+    &__title {
+        margin: 0px 0px 80px 0px;
+        color: $light-green;
+        font-size: 40px;
+        line-height: 100%;
+        text-align: center;
+
+        @media (max-width: $md3) {
+            margin: 0px 0px 50px 0px;
+            font-size: 30px;
+        }
+
+        @media (max-width: $md5) {
+            margin: 0px 0px 25px 0px;
+            font-size: 24px;
+
+        }
+    }
+
+}
+
+.categories__protectores {
+    margin: 0px 0px 120px 0px;
+}

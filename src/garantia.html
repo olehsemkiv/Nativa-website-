@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+@@include('html/head.html', {
+"title": "Garantia"
+})
+
+<body>
+
+    <div class="wrapper">
+
+        @@include('html/header.html', {
+        "link":"1"
+        })
+
+        <main class="page">
+
+            <section class="garantia-front">
+                <div class="garantia-front__container _ibg">
+                    <div class="__container">
+                        <ul class="garantia-front__menu mini-menu">
+                            <li class="mini-menu__item">
+                                <a href="index.html" class="mini-menu__link">Home</a>
+                            </li>
+                            <li class="mini-menu__item">
+                                <a href="garantia.html" class="mini-menu__link"> / Garantía</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <img src="@img/garantia-front/garantia-bg.png" alt="">
+                </div>
+            </section>
+            <section class="garantia-info">
+                <div class="garantia-info__container __container">
+                    <h1 class="garantia-info__title">Certificado de Garantía Nativa</h1>
+                    <p class="garantia-info__text">Nuestro objetivo es asegurar la calidad de nuestros productos, <br>
+                        para brindarte un confortable y saludable descanso.</p>
+                    <p class="garantia-info__text">Confiamos en la destreza de nuestro proceso de producción, por lo
+                        cual todos los productos Nativa están garantizados contra defectos de fabricación y/o materiales
+                        utilizados, toda la información sobre la garantía de tu producto se detalla en el certificado
+                        que podrás descargar a continuación.</p>
+                    <a href="#" class="garantia-info__btn">Descargar Certificado de Garantía Nativa</a>
+                </div>
+            </section>
+            <section class="garantia-reclamos _ibg">
+                <div class="garantia-reclamos__container __container">
+                    <h2 class="garantia-reclamos__title">Reclamos de garantía:</h2>
+                    <div class="garantia-reclamos__body">
+                        <h3 class="garantia-reclamos__sub-title">¿Qué hacer en caso de reclamo?</h3>
+                        <ul class="garantia-reclamos__list">
+                            <li class="garantia-reclamos__item">
+                                <span>01 |</span> Comunicate con el vendedor minorista donde compraste tu producto
+                                Nativa.
+                            </li>
+                            <li class="garantia-reclamos__item">
+                                <span>02 |</span> Si no localizás a tu vendedor, por favor comunicate con Limansky S.A.
+                            </li>
+                            <li class="garantia-reclamos__item">
+                                <span>03 |</span> Es necesario que permitas la inspección del producto, que será
+                                realizada por el
+                                fabricante y/o el técnico que él mismo designe, de esta forma se determina la cobertura
+                                de la garantía y se puede exigir su cumplimiento. La constancia de inspección también
+                                deberá ser suscrita por el consumidor. </li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="@img/reclamos/reclabos-bg.png" alt="">
+            </section>
+        </main>
+
+        @@include('html/footer.html', {})
+
+    </div>
+    @@include('html/js.html', {})
+
+
+</body>
+
+</html>

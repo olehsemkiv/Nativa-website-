@@ -45,8 +45,8 @@ const swiper_front = new Swiper(".front__mySwiper", {
 
 
 const swiper_second = new Swiper(".second__mySwiper", {
-   
-    
+
+
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -74,3 +74,28 @@ const swiper_second = new Swiper(".second__mySwiper", {
 });
 
 
+const swiper = new Swiper(".product-info-slider__mySwiper", {
+
+    spaceBetween: 10,
+    freeMode: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".product-info-slider__swiper-button-next",
+        prevEl: ".product-info-slider__swiper-button-prev",
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        0: {
+            slidesPerView: 1
+        },
+        768: {
+            slidesPerView: 2
+        },
+        992: {
+            slidesPerView: 3
+        }
+    },
+});

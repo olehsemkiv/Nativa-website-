@@ -378,6 +378,9 @@ body._lock {
     justify-content: center;
   }
 }
+.menu__item {
+  position: relative;
+}
 .menu__item:not(:last-child) {
   margin-right: 60px;
 }
@@ -395,7 +398,7 @@ body._lock {
 .menu__link::before {
   content: "";
   position: absolute;
-  bottom: -6px;
+  bottom: -10px;
   left: 0;
   width: 0%;
   height: 3px;
@@ -405,7 +408,7 @@ body._lock {
 .menu__link._active::before {
   content: "";
   position: absolute;
-  bottom: -6px;
+  bottom: -10px;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
@@ -418,6 +421,22 @@ body._lock {
     width: 100%;
   }
 }
+.menu__sub-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.menu__button-arrow {
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+.menu__button-arrow img {
+  width: 100%;
+  height: 100%;
+}
+
 .menu__icon {
   z-index: 5;
   position: relative;
@@ -507,10 +526,13 @@ body._lock {
     border-bottom: 1px solid #c7c6c6;
     padding: 20px 30px;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
   }
   .menu .menu__list .menu__item a {
     color: #1e1e1e;
     display: block;
+    flex: 1 1 auto;
   }
   .menu .menu__list .menu__item a._active::before {
     content: "";
@@ -525,6 +547,31 @@ body._lock {
   }
   .menu._active {
     top: 70px;
+  }
+  .menu__sub-list {
+    position: static;
+    display: none;
+    flex: 1 1 100%;
+  }
+  .menu__sub-list._active {
+    display: block;
+  }
+  .menu__sub-item {
+    margin: 10px 0px 0px 0px;
+  }
+  .menu__sub-link {
+    color: #1e1e1e;
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .menu__button-arrow {
+    cursor: pointer;
+    display: block;
+    transition: transform 0.2s ease 0s;
+  }
+  .menu__button-arrow._active {
+    transform: rotate(45deg);
   }
 }
 .garantia-front__container {

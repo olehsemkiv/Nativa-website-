@@ -14,6 +14,9 @@
 
 const iconMenu = document.querySelector('.menu__icon');
 const menuBody = document.querySelector('.header__menu');
+const sub_buttons = document.querySelectorAll('.menu__button-arrow');
+const menuItems = document.querySelectorAll('.menu__link');
+
 if (iconMenu) {
     iconMenu.addEventListener('click', function (e) {
         document.body.classList.toggle('_lock');
@@ -22,7 +25,7 @@ if (iconMenu) {
     })
 }
 
-const menuItems = document.querySelectorAll('.menu__link');
+
 
 if (menuItems.length > 0) {
     menuItems.forEach(menuItem => {
@@ -37,11 +40,24 @@ if (menuItems.length > 0) {
 }
 
 
+
+if (sub_buttons.length > 0) {
+    sub_buttons.forEach(element => {
+        element.addEventListener('click', function () {
+            element.classList.toggle('_active');
+            element.nextElementSibling.classList.toggle('_active');
+        })
+    })
+}
+
+
 const swiper_front = new Swiper(".front__mySwiper", {
     pagination: {
         el: ".front__swiper-pagination",
     },
 });
+
+
 
 
 const swiper_second = new Swiper(".second__mySwiper", {

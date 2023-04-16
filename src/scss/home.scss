@@ -125,8 +125,6 @@
         @media (max-width: $md3) {
             height: 440px;
             align-items: self-start;
-
-
         }
     }
 
@@ -148,11 +146,11 @@
         padding: 80px 15px 35px 15px;
 
         @media (max-width: $md3) {
-            padding: 50px 0px;
+            padding: 50px 0;
         }
 
         @media (max-width: $md5) {
-            padding: 30px 0px;
+            padding: 30px 0;
         }
 
     }
@@ -163,7 +161,7 @@
         text-align: center;
         color: $light-green;
         font-size: 45px;
-        margin: 0px 0px 20px 0px;
+        margin: 0 0 20px 0;
         font-weight: 300;
 
         @media (max-width: $md3) {
@@ -182,16 +180,16 @@
         text-align: center;
         color: #908e8e;
         font-size: 23px;
-        margin: 0px 0px 75px 0px;
+        margin: 0 0 75px 0;
 
         @media (max-width: $md3) {
             font-size: 30px;
-            margin: 0px 0px 50px 0px;
+            margin: 0 0 50px 0;
             font-size: 18px;
         }
 
         @media (max-width: $md5) {
-            margin: 0px 0px 30px 0px;
+            margin: 0 0 30px 0;
             font-size: 16px;
         }
     }
@@ -257,6 +255,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
     // .slide-item__title
 
     @media (max-width: $md3) {
@@ -264,12 +263,10 @@
 
     }
 
-
-
     &__title {
         color: #ffffff;
         font-size: 40px;
-        margin: 0px 0px 20px 0px;
+        margin: 0 0 20px 0;
         font-weight: 300;
 
         @media (max-width: $md3) {
@@ -288,7 +285,7 @@
     // .slide-item__text
 
     &__text {
-        margin: 0px 0px 20px 0px;
+        margin: 0 0 20px 0;
         color: #dfd5ce;
         font-size: 20px;
 
@@ -365,11 +362,10 @@
         font-size: 40px;
         color: #fff;
         font-weight: 300;
-        margin: 0px 0px 25px 0px;
+        margin: 0 0 25px 0;
 
         @media (max-width: 992px) {
-            margin: 0px 0px 15px 0px;
-
+            margin: 0 0 15px 0;
         }
     }
 
@@ -378,13 +374,11 @@
     &__text {
         color: #dfd5ce;
         font-size: 20px;
-        margin: 0px 0px 25px 0px;
+        margin: 0 0 25px 0;
 
         @media (max-width: 992px) {
-            margin: 0px 0px 15px 0px;
-
+            margin: 0 0 15px 0;
         }
-
     }
 
     // .protectores__btn
@@ -444,9 +438,8 @@
         display: flex;
         justify-content: center;
         align-items: end;
-
         margin-top: -200px;
-        padding: 0px 15px;
+        padding: 0 15px;
         padding-bottom: 160px;
     }
 
@@ -458,7 +451,6 @@
         left: 0;
         z-index: -1;
         height: 540px;
-
 
         img {
             width: 100%;
@@ -532,7 +524,6 @@
         align-items: center;
         font-size: 25px;
         line-height: 140%;
-        /* 35/25 */
         color: #908e8e;
 
         @media (max-width: $md2) {

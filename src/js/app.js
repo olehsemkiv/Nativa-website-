@@ -1,31 +1,19 @@
-// import * as flsFunctions from "./modules/functions.js";
-
-// flsFunctions.isWebp();
-
-// import Swiper, {
-//     Navigation,
-//     Pagination
-// } from 'swiper';
-
-// const swiper = new Swiper();
-
-
 // burger menu
 
 const iconMenu = document.querySelector('.menu__icon');
 const menuBody = document.querySelector('.header__menu');
 const sub_buttons = document.querySelectorAll('.menu__button-arrow');
 const menuItems = document.querySelectorAll('.menu__link');
+// const bg_shadow = document.querySelector('.background__shadow');
 
 if (iconMenu) {
     iconMenu.addEventListener('click', function (e) {
         document.body.classList.toggle('_lock');
         iconMenu.classList.toggle('_active');
         menuBody.classList.toggle('_active');
+        // bg_shadow.classList.toggle('_active');
     })
 }
-
-
 
 if (menuItems.length > 0) {
     menuItems.forEach(menuItem => {
@@ -39,7 +27,14 @@ if (menuItems.length > 0) {
     })
 }
 
-
+// if (bg_shadow) {
+//     bg_shadow.addEventListener('click', function (e) {
+//         document.body.classList.remove('_lock');
+//         iconMenu.classList.remove('_active');
+//         menuBody.classList.remove('_active');
+//         bg_shadow.classList.remove('_active');
+//     })
+// }
 
 if (sub_buttons.length > 0) {
     sub_buttons.forEach(element => {
@@ -50,15 +45,11 @@ if (sub_buttons.length > 0) {
     })
 }
 
-
 const swiper_front = new Swiper(".front__mySwiper", {
     pagination: {
         el: ".front__swiper-pagination",
     },
 });
-
-
-
 
 const swiper_second = new Swiper(".second__mySwiper", {
 
@@ -88,7 +79,6 @@ const swiper_second = new Swiper(".second__mySwiper", {
         clickable: true,
     },
 });
-
 
 const swiper = new Swiper(".product-info-slider__mySwiper", {
 

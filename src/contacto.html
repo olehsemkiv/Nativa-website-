@@ -7,15 +7,11 @@
 })
 
 <body>
-
     <div class="wrapper">
-
         @@include('html/header.html', {
         "link":"3"
         })
-
         <main class="page">
-
             <section class="contacto-front">
                 <div class="contacto-front__container _ibg">
                     <div class="__container">
@@ -38,11 +34,14 @@
                         <form>
                             <input type="text" class="form__input" placeholder="Nombre y Apellido:">
                             <div class="form__input-wrapper">
-                                <input type="text" class="form__input form__input_small" placeholder="Ciudad:">
-                                <input type="text" class="form__input form__input_small" placeholder="Localidad:">
-                                <input type="text" class="form__input form__input_small" placeholder="País:">
+                                <div class="form__label"> <input type="text" class="form__input form__input_small"
+                                        placeholder="Ciudad:"></div>
+                                <div class="form__label"> <input type="text" class="form__input form__input_small"
+                                        placeholder="Localidad:"></div>
+                                <div class="form__label"> <input type="text" class="form__input form__input_small"
+                                        placeholder="País:"></div>
                             </div>
-                            <input type="text" class="form__input" placeholder="Mail:">
+                            <input type="email" class="form__input" placeholder="Mail:">
                             <input type="text" class="form__input" placeholder="Número de contacto:">
                             <textarea class="form__text-area" name="" id="" placeholder="Consulta:"></textarea>
                             <button class="form__submit" type="submit">Enviar</button>
@@ -50,11 +49,8 @@
                     </div>
                 </div>
             </section>
-
         </main>
-
         @@include('html/footer.html', {})
-
     </div>
     @@include('html/js.html', {})
 

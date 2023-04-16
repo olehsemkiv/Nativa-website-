@@ -7,15 +7,11 @@
 })
 
 <body>
-
     <div class="wrapper">
-
         @@include('html/header.html', {
         "link":"5"
         })
-
         <main class="page">
-
             <section class="page__front front">
                 <div class="front__container">
                     <div class="front__swiper swiper front__mySwiper mySwiper">
@@ -39,7 +35,6 @@
                                     <img src="@img/front/01.png" alt="">
                                 </div>
                             </div>
-
                         </div>
                         <div class="front__swiper-pagination swiper-pagination"></div>
                     </div>
@@ -52,7 +47,6 @@
                         posición
                         de sueño.
                     </p>
-
                     <div class="second__swiper swiper mySwiper second__mySwiper">
                         <div class="swiper-wrapper second__swiper-wrapper">
                             <div class="swiper-slide second__swiper-slide">
@@ -61,7 +55,8 @@
                                         <img src="@img/second/01.png" alt="">
                                     </div>
                                     <h3 class="slide-item__title">fibra</h3>
-                                    <div class="slide-item__text slide-item__text_dark">Máxima adaptabilidad, <br> soporte y confort.</div>
+                                    <div class="slide-item__text slide-item__text_dark">Máxima adaptabilidad, <br>
+                                        soporte y confort.</div>
                                     <a href="producto-info.html" class="slide-item__btn">Ver linea</a>
 
                                 </div>
@@ -69,7 +64,8 @@
                             <div class="swiper-slide second__swiper-slide">
                                 <div class="second__slide-box slide-item">
                                     <h3 class="slide-item__title">espuma</h3>
-                                    <div class="slide-item__text">Diversos niveles de confort <br> adaptados a cada estilo de sueño. </div>
+                                    <div class="slide-item__text">Diversos niveles de confort <br> adaptados a cada
+                                        estilo de sueño. </div>
                                     <a href="producto-info.html" class="slide-item__btn">Ver linea</a>
                                     <div class="slide-item__img ">
                                         <img src="@img/second/02.png" alt="">
@@ -79,7 +75,7 @@
                             <div class="swiper-slide second__swiper-slide">
                                 <div class="second__slide-box slide-item">
                                     <h3 class="slide-item__title">visco</h3>
-                                    <div class="slide-item__text">¡Firmeza, frescura  <br> y confort!</div>
+                                    <div class="slide-item__text">¡Firmeza, frescura <br> y confort!</div>
                                     <a href="producto-info.html" class="slide-item__btn">Ver linea</a>
                                     <div class="slide-item__img ">
                                         <img src="@img/second/03.png" alt="">
@@ -90,7 +86,6 @@
                         </div>
                         <div class="swiper-pagination second__swiper-pagination"></div>
                     </div>
-
                 </div>
             </section>
             <div class="protectores page__protectores">
@@ -111,7 +106,6 @@
                         <img src="@img/protectores/bg.png" alt="">
                     </div>
                 </div>
-
             </div>
             <section class="page__info info">
                 <div class="info__container">
@@ -137,13 +131,9 @@
                 </div>
             </section>
         </main>
-
         @@include('html/footer.html', {})
-
+        <!-- <div class="background__shadow"></div> -->
     </div>
     @@include('html/js.html', {})
-
-
 </body>
-
 </html>

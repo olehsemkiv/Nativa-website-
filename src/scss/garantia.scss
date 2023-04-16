@@ -48,14 +48,14 @@
         color: #70a46b;
         font-size: 50px;
         text-align: center;
-        margin: 0px 0px 50px 0px;
+        margin: 0 0 50px 0;
 
         @media (max-width: $md3) {
             font-size: 30px;
         }
 
         @media (max-width: $md5) {
-            margin: 0px 0px 25px 0px;
+            margin: 0 0 25px 0;
             font-size: 25px;
 
         }
@@ -67,11 +67,10 @@
         font-size: 25px;
         color: #908e8e;
         text-align: center;
-        margin: 0px 0px 50px 0px;
-
+        margin: 0 0 50px 0;
 
         @media (max-width: $md5) {
-            margin: 0px 0px 25px 0px;
+            margin: 0 0 25px 0;
             font-size: 18px;
 
         }
@@ -113,7 +112,6 @@
     // .garantia-reclamos__container
 
     &__container {
-
         padding: 100px 15px 150px 15px;
 
         @media (max-width: $md3) {
@@ -134,14 +132,14 @@
         line-height: 120%;
         color: $light-green;
         text-align: center;
-        margin: 0px 0px 40px 0px;
+        margin: 0 0 40px 0;
 
         @media (max-width: $md3) {
             font-size: 30px;
         }
 
         @media (max-width: $md5) {
-            margin: 0px 0px 20px 0px;
+            margin: 0 0 20px 0;
 
         }
     }
@@ -150,9 +148,7 @@
         color: #1e1e1e;
         font-size: 25px;
         line-height: 100%;
-        margin: 0px 0px 25px 0px;
-
-
+        margin: 0 0 25px 0;
     }
 
     // .garantia-reclamos__body
@@ -188,7 +184,7 @@
         }
 
         &:not(:last-child) {
-            margin: 0px 0px 20px 0px;
+            margin: 0 0 20px 0;
         }
     }
 }

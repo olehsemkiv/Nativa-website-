@@ -29,7 +29,7 @@
 // ====================================================================================================================================================
 
 .product-info-content {
-
+    position: relative;
     // .product-info-content__container
 
     &__container {
@@ -133,7 +133,115 @@
 
         }
     }
+
+    // .product-info-content__menu
+
+    &__menu {
+        position: absolute;
+        top: 100px;
+        left: 0;
+
+        @media (max-width: $md2) {
+            top: 30px;
+        }
+
+        @media (max-width: $md3) {
+            display: none;
+        }
+    }
+
+    // .product-info-content__menu-list
+
+    &__menu-list {
+        
+    }
+
+    // .product-info-content__menu-item
+
+    &__menu-item {
+        padding: 15px 25px;
+        position: relative;
+        z-index: 1;
+        transition: all 0.4s ease 0s;
+
+        &:not(:last-child) {
+            margin: 0px 0px 10px 0px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            transition: width 0.4s ease 0s;
+
+        }
+
+        &._active::before {
+            width: 100%;
+        }
+
+        &._active {
+            a {
+                color: #fff;
+            }
+        }
+
+        &_fibra {
+            &::before {
+                background-color: #e6d8d1;
+            }
+        }
+
+        &_espuma {
+            &::before {
+                background-color: #59805f;
+            }
+        }
+
+        &_visco {
+            &::before {
+                background-color: #51ab68;
+            }
+        }
+
+        @media (min-width: $md2) {
+            &:hover::before {
+                width: 100%;
+            }
+
+            &:hover {
+                a {
+                    color: #fff;
+                }
+            }
+        }
+
+        @media (max-width: $md2) {
+            padding: 12px 15px;
+        }
+    }
+
+    // .product-info-content__menu-link
+
+    &__menu-link {
+        color: #1e1e1e;
+        font-weight: 300;
+        font-size: 30px;
+        display: block;
+
+        @media (max-width: $md2) {
+            font-size: 23px;
+
+        }
+    }
 }
+
+
+
 
 // ====================================================================================================================================================
 // producto-info-front

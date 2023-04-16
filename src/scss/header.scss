@@ -88,6 +88,13 @@
         padding: 12px 15px;
         border-radius: 25px;
         font-size: 18px;
+        transition: all 0.4s ease 0s;
+
+        @media (min-width: $md2) {
+            &:hover {
+                background-color: #46af3c;
+            }
+        }
 
         @media (max-width: $md2) {
             margin-left: 0px;
@@ -97,6 +104,8 @@
             font-size: 16px;
             padding: 8px 11px;
         }
+
+
     }
 }
 

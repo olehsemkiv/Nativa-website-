@@ -75,7 +75,7 @@ const swiper_second = new Swiper(".second__mySwiper", {
     },
 
     pagination: {
-        el: ".swiper-pagination",
+        el: ".second__swiper-pagination",
         clickable: true,
     },
 });

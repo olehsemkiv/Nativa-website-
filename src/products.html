@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+@@include('html/head.html', {
+"title": "products"
+})
+
+<body>
+
+    <div class="wrapper">
+
+        @@include('html/header.html', {
+        "link":"1"
+        })
+
+        <main class="page">
+            <section class="producto-front">
+                <div class="producto-front__container _ibg">
+                    <div class="__container">
+                        <ul class="producto-front__menu mini-menu">
+                            <li class="mini-menu__item">
+                                <a href="index.html" class="mini-menu__link">Home</a>
+                            </li>
+                            <li class="mini-menu__item">
+                                <a href="products.html" class="mini-menu__link"> / Productos</a>
+                            </li>
+                            <li class="mini-menu__item">
+                                <a href="producto-detail.html" class="mini-menu__link"> / visco</a>
+                            </li>
+                        </ul>
+                        <div class="producto-front__body">
+                            <h1 class="producto-front__title">visco</h1>
+                            <h2 class="producto-front__sub-title">¡Firmeza, frescura y confort!</h2>
+                            <p class="producto-front__text">Espumas suaves con gran capacidad de absorción a los
+                                impactos y
+                                alto nivel de confort. <br> Las almohadas viscoelásticas ofrecen gran adaptación de la
+                                cabeza y
+                                el cuello. <br> Equilibrio justo entre flexibilidad y firmeza.
+                            </p>
+                        </div>
+                    </div>
+                    <img src="@img/product/banner-visco.jpg" alt="">
+                </div>
+            </section>
+            <section class="producto-content">
+                <div class="producto-content__container __container">
+                    <div class="producto-content__body">
+                        <div class="producto-content__item prod">
+                            <div class="prod__header">
+                                <h3 class="prod__title">Memory Compacta</h3>
+                                <button class="prod__btn">Ampliar</button>
+                            </div>
+                            <div class="prod__description">
+                                <p>Espuma visco</p>
+                                <p>Medidas: 70x35x13</p>
+                            </div>
+                            <div class="prod__image _ibg">
+                                <img src="@img/product/prod1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="producto-content__item prod">
+                            <div class="prod__header">
+                                <h3 class="prod__title">Touch Compacta</h3>
+                                <button class="prod__btn">Ampliar</button>
+                            </div>
+                            <div class="prod__description">
+                                <p>Espuma visco</p>
+                                <p>Medidas: 60x35x13 / 70x35x13</p>
+                            </div>
+                            <div class="prod__image _ibg">
+                                <img src="@img/product/prod2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="producto-content__item prod">
+                            <div class="prod__header">
+                                <h3 class="prod__title">Touch Cervical</h3>
+                                <button class="prod__btn">Ampliar</button>
+                            </div>
+                            <div class="prod__description">
+                                <p>Espuma visco</p>
+                                <p>Medidas: 60x35x13 / 70x35x13</p>
+                            </div>
+                            <div class="prod__image _ibg">
+                                <img src="@img/product/prod3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="producto-content__item prod">
+                            <div class="prod__header">
+                                <h3 class="prod__title">Touch Cloud</h3>
+                                <button class="prod__btn">Ampliar</button>
+                            </div>
+                            <div class="prod__description">
+                                <p>Molido visco / Espuma visco
+                                </p>
+                                <p>Medidas: 70x40x13</p>
+                            </div>
+                            <div class="prod__image _ibg">
+                                <img src="@img/product/prod5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="producto-content__item prod">
+                            <div class="prod__header">
+                                <h3 class="prod__title">Visco DOS Premium
+                                    <span>(almohada dos lados)</span>
+                                </h3>
+
+                                <button class="prod__btn">Ampliar</button>
+                            </div>
+                            <div class="prod__description">
+                                <p>Molido visco / Espuma visco
+                                </p>
+                                <p>Medidas: 70x40x13</p>
+                            </div>
+                            <div class="prod__image _ibg">
+                                <img src="@img/product/prod5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('html/footer.html', {})
+    </div>
+    @@include('html/js.html', {})
+</body>
+
+</html>

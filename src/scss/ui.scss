@@ -16,6 +16,7 @@
     &__link {
         color: #fff;
         font-size: 16px;
+        white-space: nowrap;
     }
 }
 
@@ -101,6 +102,19 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        &_mobile {
+            display: none;
+
+            .slide-item__btn {
+                border: 2px solid #dfd5ce;
+                color: #dfd5ce;
+            }
+
+            @media (max-width: $md3) {
+                display: flex;
+            }
+        }
     }
 
     // .second__slide-box
@@ -131,7 +145,7 @@
 
 .slide-item {
     position: relative;
-    height: 586px;
+    height: 530px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -140,7 +154,7 @@
     // .slide-item__title
 
     @media (max-width: $md3) {
-        height: 644px;
+        height: 444px;
 
     }
 
@@ -206,12 +220,12 @@
 
     &__container {
         position: relative;
-        padding: 80px 120px;
+        padding: 60px 90px;
         overflow: hidden;
         z-index: 20;
 
         @media (max-width: 992px) {
-            padding: 40px 60px;
+            padding: 30px 60px;
         }
 
     }
@@ -255,7 +269,7 @@
         border: 2px solid #dfd5ce;
         border-radius: 30px;
         padding: 12px 30px;
-         transition: all 0.4s ease 0s;
+        transition: all 0.4s ease 0s;
 
         @media (min-width: $md2) {
 
@@ -290,4 +304,19 @@
     @media (max-width: $md3) {
         display: none;
     }
+}
+
+
+
+.swiper-pagination-bullet {
+    background-color: #8b8b8b;
+    width: 10px;
+    height: 10px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #8b8b8b;
+    width: 20px;
+    height: 10px;
+    border-radius: 30px;
 }

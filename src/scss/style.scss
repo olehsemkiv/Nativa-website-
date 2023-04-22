@@ -76,12 +76,6 @@ body {
 
 .page {
     flex: 1 1 auto;
-    padding-top: 90px;
-
-    @media (max-width: $md3) {
-        padding-top: 70px;
-
-    }
 }
 
 .__container {

@@ -16,8 +16,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 120px 0;
-        border-bottom: 1px solid #978d88;
+        padding: 90px 0;
+        border-bottom: 1px solid #616161;
 
         @media (max-width: $md3) {
             padding: 60px 0;
@@ -42,7 +42,7 @@
 
         p {
             font-size: 35px;
-            color: #908e8e;
+            color: #616161;
             text-align: center;
 
             @media (max-width: $md3) {
@@ -113,7 +113,7 @@
     &__line {
         width: 50px;
         height: 2px;
-        background-color: #343434;
+        background-color: #616161;
         margin: 0 20px;
 
         @media (max-width: $md3) {
@@ -126,7 +126,7 @@
     &__line-bottom {
         width: 50px;
         height: 2px;
-        background-color: #343434;
+        background-color: #616161;
         display: none;
 
         @media (max-width: $md3) {

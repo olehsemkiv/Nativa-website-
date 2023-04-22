@@ -5,7 +5,7 @@
     width: 100%;
     z-index: 100;
     background-color: #fff;
-    box-shadow: 0 2px 1px #908e8e;
+    box-shadow: 0 -4px 20px #c5bebe;
     // .header__container
 
     &__container {
@@ -14,8 +14,8 @@
         margin: 0 auto;
         display: flex;
         align-items: center;
-        padding: 0 60px 0 60px;
-        height: 90px;
+        padding: 0 45px 0 45px;
+        height: 80px;
 
         @media (max-width: $md2) {
             padding: 0 30px 0 30px;
@@ -37,7 +37,7 @@
 
     &__logo {
         display: block;
-        width: 200px;
+        width: 150px;
         position: relative;
         top: -3px;
 
@@ -46,7 +46,7 @@
             height: 100%;
 
             @media (max-width: $md3) {
-                width: 160px;
+                width: 150px;
             }
 
             @media (max-width: $md5) {
@@ -78,11 +78,11 @@
     // .header__btn
 
     &__btn {
-        margin-left: 80px;
+        margin-left: 45px;
         background-color: $light-green;
         color: #fff;
         font-weight: 500;
-        padding: 12px 15px;
+        padding: 10px;
         border-radius: 25px;
         font-size: 18px;
         transition: all 0.4s ease 0s;
@@ -126,10 +126,10 @@
         position: relative;
 
         &:not(:last-child) {
-            margin-right: 60px;
+            margin-right: 40px;
 
             @media (max-width: $md2) {
-                margin-right: 30px;
+                margin-right: 20px;
             }
         }
     }

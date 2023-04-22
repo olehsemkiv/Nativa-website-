@@ -8,6 +8,7 @@
         margin: 0 auto;
         height: 580px;
         padding: 50px 15px;
+        padding-top: 90px;
 
         @media (max-width: $md3) {
             height: 350px;
@@ -29,10 +30,10 @@
     // .product-info-content__container
 
     &__container {
-        padding: 75px 15px;
+        padding: 55px 15px;
 
         @media (max-width: $md3) {
-            padding: 45px 15px;
+            padding: 35px 15px;
         }
 
         @media (max-width: $md5) {
@@ -43,20 +44,19 @@
     // .product-info-content__title
 
     &__title {
-        font-size: 60px;
+        font-size: 50px;
         color: #1e1e1e;
         line-height: 91.666667%;
         text-align: center;
-        margin: 0 0 30px 0;
+        margin: 0 0 25px 0;
         font-weight: 600;
 
         @media (max-width: $md3) {
-            margin: 0 0 20px 0;
+            margin: 0 0 15px 0;
             font-size: 45px;
         }
 
         @media (max-width: $md5) {
-            margin: 0 0 15px 0;
             font-size: 30px;
         }
     }
@@ -64,7 +64,7 @@
     // .product-info-content__sub-title
 
     &__sub-title {
-        margin: 0 0 45px 0;
+        margin: 0 0 35px 0;
         color: #51ab68;
         font-size: 35px;
         line-height: 157.142857%;
@@ -78,7 +78,7 @@
 
         @media (max-width: $md5) {
             margin: 0 0 15px 0;
-            font-size: 25px;
+            font-size: 20px;
         }
 
     }
@@ -95,7 +95,7 @@
         color: #908e8e;
 
         &:not(:last-child) {
-            margin: 0 auto 40px auto;
+            margin: 0 auto 30px auto;
 
             @media (max-width: $md5) {
                 margin: 0 0 15px 0;
@@ -110,9 +110,14 @@
 
     &__image {
         width: 100%;
-        max-width: 650px;
+        max-width: 545px;
         margin: 0 auto;
+        padding: 20px;
         padding-top: 30%;
+
+        img {
+            object-fit: contain;
+        }
 
         @media (max-width: $md3) {
             padding-top: 0;
@@ -143,20 +148,22 @@
 
     // .product-info-content__menu-list
 
-    &__menu-list {
-        
-    }
+    &__menu-list {}
 
     // .product-info-content__menu-item
 
     &__menu-item {
-        padding: 15px 25px;
+        padding: 10px 15px;
         position: relative;
         z-index: 1;
         transition: all 0.4s ease 0s;
 
+        a {
+            font-size: 16px;
+        }
+
         &:not(:last-child) {
-            margin: 0 0 10px 0;
+            margin: 0 0 7px 0;
         }
 
         &::before {
@@ -206,6 +213,7 @@
             &:hover {
                 a {
                     color: #fff;
+
                 }
             }
         }
@@ -241,11 +249,13 @@
     // .product-info-description__container
 
     &__container {
-        padding: 75px 15px;
+        padding: 55px 15px;
         display: flex;
 
         @media (max-width: $md3) {
             flex-direction: column;
+            padding: 30px 15px;
+
         }
     }
 
@@ -353,7 +363,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 500px;
+        height: 365px;
         position: relative;
 
         img {
@@ -385,7 +395,7 @@
         }
     }
 
-    
+
 }
 
 .swiper-button-next,
@@ -416,11 +426,11 @@
     max-width: 1920px;
     margin: 0 auto;
     background-color: #51ab68;
-    padding: 60px 10px;
+    padding: 40px 15px;
     // .producto-info-banner__text
 
     &__text {
-        font-size: 40px;
+        font-size: 35px;
         font-weight: 300;
         text-align: center;
         color: #fff;
@@ -435,11 +445,11 @@
     }
 
     @media (max-width: $md3) {
-        padding: 40px 0;
+        padding: 40px 15px;
     }
 
     @media (max-width: $md5) {
-        padding: 20px 0;
+        padding: 20px 15px;
 
     }
 }
